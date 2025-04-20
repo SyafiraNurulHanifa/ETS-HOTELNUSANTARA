@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamar</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/kamar-css.css">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar" id="navbar">
+            <div class="logo">Hotel Nusantara</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-item active">Home</a></li>
+                <li><a href="lokasi.html" class="nav-item">Lokasi</a></li>
+                <li><a href="kamar.html" class="nav-item">Kamar</a></li>
+
+                <li class="nav-item dropdown">
+                    <a href="#" class="dropbtn">Informasi &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="galeri.html">Galeri</a>
+                        <a href="about.html">About</a>
+                        <div class="dropdown-separator"></div>
+                        <a href="riwayat.html" class="nav-btn">Riwayat Pemesanan</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+
+    <!-- Daftar Kamar Page -->
+    <div class="kamar-page">
+        <div class="container py-5">
+            <h2 class="judul-kamar">Daftar Kamar</h2>
+
+            <div class="kamar-container">
+                <div class="filter-bar">
+                    <!-- Lokasi -->
+                    <div class="filter-section">
+                        <label class="filter-label" for="filterLokasi">Filter Berdasarkan Lokasi</label>
+                        <select id="filterLokasi">
+                            <option value="">Semua Lokasi</option>
+                            <option value="Jakarta">Jakarta</option>
+                            <option value="Bali">Bali</option>
+                            <option value="Surabaya">Surabaya</option>
+                            <option value="Yogyakarta">Yogyakarta</option>
+                        </select>
+                    </div>
+
+                    <!-- Harga -->
+                    <div class="filter-section">
+                        <label class="filter-label">Filter Berdasarkan Harga</label>
+                        <div class="price-bar">
+                            <label>
+                                <input type="radio" name="price-range" value="low">
+                                <span>Rp &lt; 800rb</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="price-range" value="mid">
+                                <span>Rp 800rb - 1jt</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="price-range" value="high">
+                                <span>&gt; Rp 1jt</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Reset -->
+                    <div class="filter-section">
+                        <label class="filter-label invisible">Reset</label>
+                        <button id="resetBtn">Reset Filter</button>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <!-- Grid kamar -->
+        <div class="kamar-grid">
+            <!-- Contoh Kartu Kamar -->
+
+            <!--kartu 1-->
+            <div class="kamar-card" data-lokasi="Jakarta">
+                <div class="lokasi-badge"><i class="bi bi-geo-alt-fill"></i> Jakarta</div>
+
+                <!-- Carousel -->
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <img src="assets/img/1.jpg" alt="Kamar Jakarta 1">
+                        <img src="assets/img/2.jpg" alt="Kamar Jakarta 2">
+                        <img src="assets/img/3.jpg" alt="Kamar Jakarta 3">
+                    </div>
+                    <button class="carousel-btn prev">‹</button>
+                    <button class="carousel-btn next">›</button>
+                </div>
+
+                <!-- Info Kamar -->
+                <div class="kamar-info">
+                    <h3>Deluxe Room</h3>
+                    <p>Fasilitas: Wi-Fi, TV, AC, Sarapan, View</p>
+                    <p style="color: #FFA500; font-weight: bold; font-size: 1.2rem;">Rp1.050.000 <small>/malam</small></p>
+                    <span class="sisa-kamar">5</span> kamar tersisa
+                    <br>
+                    <a href="form-pesan.html" class="button">Pesan Kamar</a>
+                </div>
+            </div>
+
+            <!--kartu 2-->
+            <div class="kamar-card" data-lokasi="Surabaya">
+                <div class="lokasi-badge"><i class="bi bi-geo-alt-fill"></i> Surabaya</div>
+
+                <!-- Carousel -->
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <img src="assets/img/background-hero.jpg" alt="Kamar Jakarta 1">
+                        <img src="assets/img/2.jpg" alt="Kamar Jakarta 2">
+                        <img src="assets/img/eksterior-3.jpg" alt="Kamar Jakarta 3">
+                    </div>
+                    <button class="carousel-btn prev">‹</button>
+                    <button class="carousel-btn next">›</button>
+                </div>
+
+                <!-- Info Kamar -->
+                <div class="kamar-info">
+                    <h3>Single Room</h3>
+                    <p>Fasilitas: Wi-Fi, TV, AC</p>
+                    <p style="color: #FFA500; font-weight: bold; font-size: 1.2rem;">Rp850.000 <small>/malam</small></p>
+                    <span class="sisa-kamar">5</span> kamar tersisa
+                    <br>
+                    <a href="form-pesan.html" class="button">Pesan Kamar</a>
+                </div>
+            </div>
+
+            <!--kartu 3-->
+            <div class="kamar-card" data-lokasi="Bali">
+                <div class="lokasi-badge"><i class="bi bi-geo-alt-fill"></i> Bali</div>
+
+                <!-- Carousel -->
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <img src="assets/img/3.jpg" alt="Kamar Jakarta 1">
+                        <img src="assets/img/eksterior-4.jpg" alt="Kamar Jakarta 2">
+                        <img src="assets/img/eksterior-2.jpg" alt="Kamar Jakarta 3">
+                    </div>
+                    <button class="carousel-btn prev">‹</button>
+                    <button class="carousel-btn next">›</button>
+                </div>
+
+                <!-- Info Kamar -->
+                <div class="kamar-info">
+                    <h3>Deluxe Room</h3>
+                    <p>Fasilitas: Wi-Fi, TV, AC, Sarapan, Sunset View</p>
+                    <p style="color: #FFA500; font-weight: bold; font-size: 1.2rem;">Rp1.500.000 <small>/malam</small></p>
+                    <span class="sisa-kamar">2</span> kamar tersisa
+                    <br>
+                    <a href="form-pesan.html" class="button">Pesan Kamar</a>
+                </div>
+            </div>
+
+            <!--kartu 4-->
+            <div class="kamar-card" data-lokasi="Yogyakarta">
+                <div class="lokasi-badge"><i class="bi bi-geo-alt-fill"></i> Yogyakarta</div>
+
+                <!-- Carousel -->
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <img src="assets/img/2.jpg" alt="Kamar Jakarta 1">
+                        <img src="assets/img/gym-spa.jpg" alt="Kamar Jakarta 2">
+                        <img src="assets/img/3.jpg" alt="Kamar Jakarta 3">
+                    </div>
+                    <button class="carousel-btn prev">‹</button>
+                    <button class="carousel-btn next">›</button>
+                </div>
+
+                <!-- Info Kamar -->
+                <div class="kamar-info">
+                    <h3>VIP Room</h3>
+                    <p>Fasilitas: Wi-Fi, TV, AC, Sarapan, View, Gym, Spa</p>
+                    <p style="color: #FFA500; font-weight: bold; font-size: 1.2rem;">Rp1.700.000 <small>/malam</small></p>
+                    <span class="sisa-kamar">1</span> kamar tersisa
+                    <br>
+                    <a href="form-pesan.html" class="button">Pesan Kamar</a>
+                </div>
+            </div>
+
+            <!--kartu 5-->
+            <div class="kamar-card" data-lokasi="Surabaya">
+                <div class="lokasi-badge"><i class="bi bi-geo-alt-fill"></i> Surabaya</div>
+
+                <!-- Carousel -->
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <img src="assets/img/eksterior.jpg" alt="Kamar Jakarta 1">
+                        <img src="assets/img/ekterior-5.jpg" alt="Kamar Jakarta 2">
+                        <img src="assets/img/eksterior-3.jpg" alt="Kamar Jakarta 3">
+                    </div>
+                    <button class="carousel-btn prev">‹</button>
+                    <button class="carousel-btn next">›</button>
+                </div>
+
+                <!-- Info Kamar -->
+                <div class="kamar-info">
+                    <h3>VIP Room</h3>
+                    <p>Fasilitas: Wi-Fi, TV, AC, Sarapan, View, Gym, Spa</p>
+                    <p style="color: #FFA500; font-weight: bold; font-size: 1.2rem;">Rp2.000.000 <small>/malam</small></p>
+                    <span class="sisa-kamar">2</span> kamar tersisa
+                    <br>
+                    <a href="form-pesan.html" class="button">Pesan Kamar</a>
+                </div>
+            </div>
+
+            <!--kartu 6-->
+            <div class="kamar-card" data-lokasi="Bali">
+                <div class="lokasi-badge"><i class="bi bi-geo-alt-fill"></i> Bali</div>
+
+                <!-- Carousel -->
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <img src="assets/img/ekterior-5.jpg" alt="Kamar Jakarta 1">
+                        <img src="assets/img/kolam-1.jpg" alt="Kamar Jakarta 2">
+                        <img src="assets/img/kolam-1.jpg" alt="Kamar Jakarta 3">
+                    </div>
+                    <button class="carousel-btn prev">‹</button>
+                    <button class="carousel-btn next">›</button>
+                </div>
+
+                <!-- Info Kamar -->
+                <div class="kamar-info">
+                    <h3>Single Room</h3>
+                    <p>Fasilitas: Wi-Fi, TV, AC</p>
+                    <p style="color: #FFA500; font-weight: bold; font-size: 1.2rem;">Rp700.000 <small>/malam</small></p>
+                    <span class="sisa-kamar">5</span> kamar tersisa
+                    <br>
+                    <a href="form-pesan.html" class="button">Pesan Kamar</a>
+                </div>
+            </div>
+
+            <!--kartu 7-->
+            <div class="kamar-card" data-lokasi="Yogyakarta">
+                <div class="lokasi-badge"><i class="bi bi-geo-alt-fill"></i> Yogyakarta</div>
+
+                <!-- Carousel -->
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <img src="assets/img/kolam-3.jpg" alt="Kamar Jakarta 1">
+                        <img src="assets/img/prasmanan.jpg" alt="Kamar Jakarta 2">
+                        <img src="assets/img/wastafel.jpg" alt="Kamar Jakarta 3">
+                    </div>
+                    <button class="carousel-btn prev">‹</button>
+                    <button class="carousel-btn next">›</button>
+                </div>
+
+                <!-- Info Kamar -->
+                <div class="kamar-info">
+                    <h3>Deluxe Room</h3>
+                    <p>Fasilitas: Wi-Fi, TV, AC, Sarapan, View</p>
+                    <p style="color: #FFA500; font-weight: bold; font-size: 1.2rem;">Rp1.000.000 <small>/malam</small></p>
+                    <span class="sisa-kamar">2</span> kamar tersisa
+                    <br>
+                    <a href="form-pesan.html" class="button">Pesan Kamar</a>
+                </div>
+            </div>
+
+            <!--kartu 8-->
+            <div class="kamar-card" data-lokasi="Jakarta">
+                <div class="lokasi-badge"><i class="bi bi-geo-alt-fill"></i> Jakarta</div>
+
+                <!-- Carousel -->
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <img src="assets/img/kolam-2.jpg" alt="Kamar Jakarta 1">
+                        <img src="assets/img/eksterior.jpg" alt="Kamar Jakarta 2">
+                        <img src="assets/img/kolam-1.jpg" alt="Kamar Jakarta 3">
+                    </div>
+                    <button class="carousel-btn prev">‹</button>
+                    <button class="carousel-btn next">›</button>
+                </div>
+
+                <!-- Info Kamar -->
+                <div class="kamar-info">
+                    <h3>Single Room</h3>
+                    <p>Fasilitas: Wi-Fi, TV, AC</p>
+                    <p style="color: #FFA500; font-weight: bold; font-size: 1.2rem;">Rp850.000 <small>/malam</small></p>
+                    <span class="sisa-kamar">3</span> kamar tersisa
+                    <br>
+                    <a href="form-pesan.html" class="button">Pesan Kamar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>Kontak & Alamat</h4>
+            <p>Hotel Nusantara<br>Jl. Merdeka No.1, Jakarta, Indonesia<br>
+                Email: info@hotelnusantara.com<br>Telepon: (021) 123-4567</p>
+        </div>
+        <br>
+        <div class="footer-section">
+            <h4>Ikuti Kami</h4>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+                <a href="#">Facebook</a>
+            </div>
+        </div>
+        <br>
+        <div class="footer-section">
+            <h4>Informasi</h4>
+            <div class="footer-links">
+                <a href="#">FAQ</a>
+                <a href="#">Kebijakan Pembatalan</a>
+                <a href="#">Syarat & Ketentuan</a>
+            </div>
+        </div>
+        <br>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Hotel Nusantara. All rights reserved.</p>
+    </div>
+</footer>
+</div>
+
+</body>
+
+<script src="assets/js/kamar-js.js"></script>
+
+
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeri - Hotel Nusantara</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- SwiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        body {
+            background-color: #fff;
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 50px;
+            color: #2c3e50;
+        }
+
+        .location-title {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #34495e;
+            border-left: 5px solid #e9ba55ce;
+            padding-left: 15px;
+        }
+
+        .swiper {
+            padding: 20px 0;
+        }
+
+        .swiper-slide {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: #297fb907;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #e99d3a;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar" id="navbar">
+            <div class="logo">Hotel Nusantara</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-item">Home</a></li>
+                <li><a href="lokasi.html" class="nav-item">Lokasi</a></li>
+                <li><a href="kamar.html" class="nav-item">Kamar</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="dropbtn">Informasi &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="galeri.html" class="active">Galeri</a>
+                        <a href="about.html">About</a>
+                        <div class="dropdown-separator"></div>
+                        <a href="riwayat.html" class="nav-btn">Riwayat Pemesanan</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Galeri -->
+    <section class="container">
+        <h2 class="section-title">Galeri Hotel Nusantara</h2>
+
+        <!-- Lokasi -->
+        <div class="location-section">
+            <h3 class="location-title">Jakarta</h3>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/img/eksterior-3.jpg" alt="Jogja 1"></div>
+                    <div class="swiper-slide"><img src="assets/img/background-hero.jpg" alt="Jogja 2"></div>
+                    <div class="swiper-slide"><img src="assets/img/kolam-4.jpg" alt="Jogja 3"></div>
+                    <div class="swiper-slide"><img src="assets/img/kamar-mandi-putih.jpg" alt="Jogja 1"></div>
+                    <div class="swiper-slide"><img src="assets/img/lounge.jpg" alt="Jogja 2"></div>
+                    <div class="swiper-slide"><img src="assets/img/kolam-4.jpg" alt="Jogja 1"></div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div class="location-section">
+            <h3 class="location-title">Surabaya</h3>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/img/eksterior-2.jpg" alt="Bali 1"></div>
+                    <div class="swiper-slide"><img src="assets/img/gym-spa.jpg" alt="Bali 2"></div>
+                    <div class="swiper-slide"><img src="assets/img/kamar-mandi-putih.jpg" Bali 3"></div>
+                    <div class="swiper-slide"><img src="assets/img/eksterior-3.jpg" alt="Jogja 1"></div>
+                    <div class="swiper-slide"><img src="assets/img/background-hero.jpg" alt="Jogja 2"></div>
+                    <div class="swiper-slide"><img src="assets/img/2.jpg" alt="Jogja 3"></div>
+
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div class="location-section">
+            <h3 class="location-title">Bali</h3>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/img/eksterior-2.jpg" alt="Bali 1"></div>
+                    <div class="swiper-slide"><img src="assets/img/gym-spa.jpg" alt="Bali 2"></div>
+                    <div class="swiper-slide"><img src="assets/img/eksterior-4.jpg" Bali 3"></div>
+                    <div class="swiper-slide"><img src="assets/img/kolam-3.jpg" alt="Bali 1"></div>
+                    <div class="swiper-slide"><img src="assets/img/1.jpg" alt="Bali 2"></div>
+                    <div class="swiper-slide"><img src="assets/img/kamar-mandi-putih.jpg" Bali 3"></div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div class="location-section">
+            <h3 class="location-title">Yogyakarta</h3>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/img/eksterior-2.jpg" alt="Bali 1"></div>
+                    <div class="swiper-slide"><img src="assets/img/gym-spa.jpg" alt="Bali 2"></div>
+                    <div class="swiper-slide"><img src="assets/img/eksterior-4.jpg" Bali 3"></div>
+                    <div class="swiper-slide"><img src="assets/img/kolam-3.jpg" alt="Bali 1"></div>
+                    <div class="swiper-slide"><img src="assets/img/1.jpg" alt="Bali 2"></div>
+                    <div class="swiper-slide"><img src="assets/img/kamar-mandi-putih.jpg" Bali 3"></div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Kontak & Alamat</h4>
+                <p>Hotel Nusantara<br>Jl. Merdeka No.1, Jakarta<br>
+                    Email: info@hotelnusantara.com<br>Telepon: (021) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h4>Ikuti Kami</h4>
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">TikTok</a>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Informasi</h4>
+                <div class="footer-links">
+                    <a href="#">FAQ</a>
+                    <a href="#">Kebijakan Pembatalan</a>
+                    <a href="#">Syarat & Ketentuan</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Hotel Nusantara. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- SwiperJS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swipers = document.querySelectorAll('.mySwiper');
+        swipers.forEach(swiperContainer => {
+            new Swiper(swiperContainer, {
+                slidesPerView: 3,
+                spaceBetween: 20,
+                loop: true,
+                autoplay: {
+                    delay: 2500, // waktu jeda per slide dalam milidetik
+                    disableOnInteraction: false, // tetap autoplay meskipun user klik
+                },
+                navigation: {
+                    nextEl: swiperContainer.querySelector('.swiper-button-next'),
+                    prevEl: swiperContainer.querySelector('.swiper-button-prev'),
+                },
+                pagination: {
+                    el: swiperContainer.querySelector('.swiper-pagination'),
+                    clickable: true,
+                },
+                breakpoints: {
+                    320: { slidesPerView: 1 },
+                    768: { slidesPerView: 2 },
+                    1024: { slidesPerView: 3 },
+                },
+            });
+
+        });
+    </script>
+</body>
+
+</html>

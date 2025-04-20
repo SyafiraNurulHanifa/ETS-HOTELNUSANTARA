@@ -1,0 +1,2 @@
+{"nama":"han","email":"syakia@gmail.com","telepon":"0816659081","lokasi":"malang","checkin":"2025-04-17","checkout":"2025-04-10","jumlahTamu":"3","jumlahKamar":"3","tipeKamar":"deluxe","permintaan":"","pembayaran":"transfer"}
+{"nama":"Syafira Nurul Hanifa ","email":"rariru.365@gmail.com","telepon":"0816659081","lokasi":"surabaya","checkin":"2025-04-11","checkout":"2025-04-16","jumlahTamu":"1","jumlahKamar":"2","tipeKamar":"standar","permintaan":"","pembayaran":"transfer"}
